@@ -1,68 +1,41 @@
-<!--
-  Hi, I'm Xiaobocm ✦
-  Compact English-only GitHub profile README
--->
+<h1 align="center">你好! 我是 Xiaobocm</h1>
+<h3 align="center">写代码，喝咖啡，再写</h3>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=120&section=header&text=Xiaobocm&fontSize=40&fontAlignY=35&desc=✦%20Code%20%26%20Anime%20✦&descAlignY=55&animation=fadeIn" width="100%" />
+  👉<a href="https://afdian.com/a/xiaobocm">
+    <img src="https://static.afdiancdn.com/static/img/logo/logo.png" alt="爱发电" width="32">
+  </a>给我赞助
 </p>
 
 <div align="center">
-  <a href="mailto:xiaobocm@outlook.com"><img src="https://img.shields.io/badge/Outlook-xiaobocm@outlook.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&labelColor=1a1a2e" alt="Outlook" /></a>
-  <a href="mailto:xiaobocm@88.com"><img src="https://img.shields.io/badge/88.com-xiaobocm@88.com-FF6B6B?style=flat-square&logo=gmail&logoColor=white&labelColor=1a1a2e" alt="88.com" /></a>
-  <a href="https://github.com/xiaobocm"><img src="https://img.shields.io/badge/GitHub-xiaobocm-6e40c9?style=flat-square&logo=github&logoColor=white&labelColor=1a1a2e" alt="GitHub" /></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=xiaobocm&locale=zh_Hans&mode=daily&theme=aura&hide_border=true&border_radius=5" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=xiaobocm&locale=zh_Hans&mode=daily&theme=catppuccin_latte&hide_border=true&border_radius=5" />
+    <img alt="GitHub 连续提交统计" src="https://streak-stats.demolab.com/?user=xiaobocm&locale=zh_Hans&mode=daily&theme=catppuccin_latte&hide_border=true&border_radius=5" width="50%" />
+  </picture>
 </div>
-
-<br />
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=C084FC&center=true&vCenter=true&width=400&lines=From+Ningbo%2C+China;Student+·+Developer;Anime+·+Code+Lover" alt="Typing SVG" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaobocm/xiaobocm/blob/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaobocm/xiaobocm/blob/output/github-snake.svg" />
+    <img alt="GitHub 贡献图贪吃蛇" src="github-snake.svg" width="95%" />
+  </picture>
 </div>
 
-<br />
+---
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=xiaobocm&show_icons=true&theme=radical&bg_color=1a1a2e&title_color=C084FC&icon_color=FF6B9D&text_color=CDB4DB&border_color=6e40c9&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&hide=issues,contribs" alt="GitHub Stats" width="45%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaobocm&layout=compact&theme=radical&bg_color=1a1a2e&title_color=C084FC&text_color=CDB4DB&border_color=6e40c9&hide_border=true&card_width=280" alt="Top Langs" width="38%" />
-</div>
+### 📫 如何联系我
+- 邮箱：xiaobocm@88.com / xiaobocm@outlook.com
+- 个人主页：(你的个人网站或博客链接)
 
-<br />
-
-<div align="center">
-  <img src="https://ghchart.rshah.org/xiaobocm?background=1a1a2e&labels=6e40c9&days=CDB4DB&weeks=C084FC&today=FF6B9D&legend=CDB4DB" alt="Contribution Chart" width="85%" />
-</div>
-
-<br />
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><img src="https://img.shields.io/badge/📦-Repos-8B5CF6?style=flat-square&labelColor=1a1a2e" /><br /><strong>18</strong></td>
-      <td align="center"><img src="https://img.shields.io/badge/⭐-Stars-FF6B9D?style=flat-square&labelColor=1a1a2e" /><br /><strong>6</strong></td>
-      <td align="center"><img src="https://img.shields.io/badge/👥-Followers-C084FC?style=flat-square&labelColor=1a1a2e" /><br /><strong>12</strong></td>
-    </tr>
-  </table>
-</div>
-
-<br />
-
-<details>
-  <summary><b>🎀 About me</b></summary>
-  <br />
-  <div align="center">
-    <i>「 Code & Anime, my fuel 」</i><br /><br />
-    🌱 Learning: <strong>Full-stack Dev</strong><br />
-    💬 Ask me: <strong>Anime, Vue, Python</strong><br />
-    📫 <strong>xiaobocm@outlook.com</strong> / <strong>xiaobocm@88.com</strong>
-  </div>
-</details>
-
-<br />
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=xiaobocm&label=✨%20Views&color=8B5CF6&style=flat-square" alt="Profile views" />
+### 🛠 技术栈
+(你可以在这里添加你熟悉的编程语言或工具图标，例如：)
+<p align="left">
+  <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
+  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black" />
+  <!-- 继续添加你喜欢的图标 -->
 </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer&animation=fadeIn" width="100%" />
-</p>
+### 📊 统计
+(这里可以补充其他你想要的统计卡片)
