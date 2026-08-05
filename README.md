@@ -2,9 +2,8 @@
 <h3 align="center">写代码，喝咖啡，再写</h3>
 
 <p align="center">
-  👉<a href="https://afdian.com/a/xiaobocm">
-    <img src="https://static.afdiancdn.com/static/img/logo/logo.png" alt="爱发电" width="32">
-  </a>给我赞助
+  <!-- 预留赞助位置，后续可替换为任意赞助链接 -->
+  👉 赞助入口（待配置）
 </p>
 
 <div align="center">
@@ -27,15 +26,3 @@
 
 ### 📫 如何联系我
 - 邮箱：xiaobocm@88.com / xiaobocm@outlook.com
-- 个人主页：(你的个人网站或博客链接)
-
-### 🛠 技术栈
-(你可以在这里添加你熟悉的编程语言或工具图标，例如：)
-<p align="left">
-  <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black" />
-  <!-- 继续添加你喜欢的图标 -->
-</p>
-
-### 📊 统计
-(这里可以补充其他你想要的统计卡片)
