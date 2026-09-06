@@ -2,7 +2,7 @@
 <h3 align="center">写代码，喝咖啡，再写</h3>
 
 <p align="center">
-  👉 赞助入口https://afdian.com/singapore
+  👉 赞助入口https://afdian.com/a/singapore
 </p>
 
 <div align="center">
