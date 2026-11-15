@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Jason Xi — 文章</title>
+  <link>https://blog.xiaobocm.com/zh/blog/</link>
+  <description>關於模型、機器，以及兩者之間那些地方的筆記。</description>
+  <language>zh-Hant</language>
+  <lastBuildDate>Sun, 15 Nov 2026 15:38:18 +0800</lastBuildDate>
+  <atom:link href="https://blog.xiaobocm.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Token 的成本正在下降，壞點子的代價不會</title>
+    <link>https://blog.xiaobocm.com/zh/blog/why-ideas-win/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/why-ideas-win/</guid>
+    <pubDate>Sun, 15 Nov 2026 09:00:00 +0800</pubDate>
+    <description>MoE 與 agent 讓智慧變得更便宜，但判斷力不會跟著變便宜；它反而成了重點。</description>
+    <category>模型</category>
+  </item>
+  <item>
+    <title>讓物理世界學會思考</title>
+    <link>https://blog.xiaobocm.com/zh/blog/ai-at-the-edge/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/ai-at-the-edge/</guid>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0800</pubDate>
+    <description>IoT 有趣的地方不在儀表板，而在某個小裝置自己做出更好決定的那一刻。</description>
+    <category>機器</category>
+  </item>
+  <item>
+    <title>刻意做小的網站</title>
+    <link>https://blog.xiaobocm.com/zh/blog/a-small-site-on-purpose/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/a-small-site-on-purpose/</guid>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0800</pubDate>
+    <description>沒有框架、沒有建置流程、沒有資料庫。個人網站應該比打造它的工具活得更久。</description>
+    <category>建造</category>
+  </item>
+  <item>
+    <title>從高處看</title>
+    <link>https://blog.xiaobocm.com/zh/blog/the-view-from-above/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/the-view-from-above/</guid>
+    <pubDate>Mon, 26 Oct 2026 09:00:00 +0800</pubDate>
+    <description>一台 DJI Mini 3、一台 Action 3，以及那個安靜的體會：視角是一種思考方式。</description>
+    <category>隨筆</category>
+  </item>
+  <item>
+    <title>共同創辦 SinoFlare 教我的研究功課</title>
+    <link>https://blog.xiaobocm.com/zh/blog/research-together/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/research-together/</guid>
+    <pubDate>Mon, 12 Oct 2026 09:00:00 +0800</pubDate>
+    <description>一群願意認真對待你半成形想法的人，是被低估的研究工具。</description>
+    <category>建造</category>
+  </item>
+  <item>
+    <title>在學其他一切的同時，學三種語言</title>
+    <link>https://blog.xiaobocm.com/zh/blog/learning-three-languages/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/learning-three-languages/</guid>
+    <pubDate>Mon, 28 Sep 2026 09:00:00 +0800</pubDate>
+    <description>一個初三學生的筆記：把英文當基礎設施、把日文與韓文當遊戲，以及為什麼掙扎本身就是重點。</description>
+    <category>隨筆</category>
+  </item>
+</channel>
+</rss>

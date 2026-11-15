@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-Hant" data-build="2026.11.15.13">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var t=localStorage.getItem('xb-theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token 的成本正在下降，壞點子的代價不會 — Jason Xi</title>
+<meta name="description" content="MoE 與 agent 讓智慧變得更便宜，但判斷力不會跟著變便宜；它反而成了重點。">
+<meta name="author" content="Jason Xi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d151a" media="(prefers-color-scheme: dark)">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="canonical" href="https://blog.xiaobocm.com/zh/blog/why-ideas-win/">
+<link rel="alternate" hreflang="en" href="https://blog.xiaobocm.com/blog/why-ideas-win/">
+<link rel="alternate" hreflang="zh-Hant" href="https://blog.xiaobocm.com/zh/blog/why-ideas-win/">
+<link rel="alternate" hreflang="x-default" href="https://blog.xiaobocm.com/blog/why-ideas-win/">
+<link rel="me" href="https://github.com/xiaobocm">
+<link rel="me" href="https://x.com/xiaobocm">
+<link rel="alternate" type="application/rss+xml" title="Jason Xi — 文章" href="https://blog.xiaobocm.com/zh/feed.xml">
+<link rel="preload" href="/assets/fonts/spectral-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/spectral-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/img/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/assets/css/site.css?v=2026.11.15.13">
+<link rel="stylesheet" href="/assets/css/post.css?v=2026.11.15.13">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jason Xi">
+<meta property="og:title" content="Token 的成本正在下降，壞點子的代價不會 — Jason Xi">
+<meta property="og:description" content="MoE 與 agent 讓智慧變得更便宜，但判斷力不會跟著變便宜；它反而成了重點。">
+<meta property="og:url" content="https://blog.xiaobocm.com/zh/blog/why-ideas-win/">
+<meta property="og:image" content="https://blog.xiaobocm.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Token 的成本正在下降，壞點子的代價不會 — Jason Xi">
+<meta name="twitter:description" content="MoE 與 agent 讓智慧變得更便宜，但判斷力不會跟著變便宜；它反而成了重點。">
+<meta name="twitter:image" content="https://blog.xiaobocm.com/assets/img/og.jpg">
+<meta property="article:published_time" content="2026-11-15T09:00:00+08:00">
+<meta property="article:author" content="Jason Xi">
+<meta property="article:section" content="模型">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Token 的成本正在下降，壞點子的代價不會","description":"MoE 與 agent 讓智慧變得更便宜，但判斷力不會跟著變便宜；它反而成了重點。","datePublished":"2026-11-15","dateModified":"2026-11-15","author":{"@type":"Person","name":"Jason Xi","url":"https://blog.xiaobocm.com/zh/"},"publisher":{"@type":"Person","name":"Jason Xi","url":"https://blog.xiaobocm.com/zh/"},"image":"https://blog.xiaobocm.com/assets/img/og.jpg","url":"https://blog.xiaobocm.com/zh/blog/why-ideas-win/","mainEntityOfPage":"https://blog.xiaobocm.com/zh/blog/why-ideas-win/","articleSection":"模型","inLanguage":"zh-Hant"}</script>
+<script defer src="/assets/js/site.js?v=2026.11.15.13"></script>
+<script defer src="/assets/js/particles.js?v=2026.11.15.13"></script>
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<header class="site-nav-wrapper">
+  <a class="site-name" href="/zh/" aria-label="Jason Xi — 首頁">
+    <img src="/assets/img/icon.png" alt="" width="96" height="96">
+    Jason Xi
+  </a>
+  <button class="hamburger" type="button" aria-expanded="false" aria-controls="site-nav" data-open-label="開啟選單" data-close-label="關閉選單">
+    <span class="sr-only">開啟選單</span>
+    <span class="hamburger-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+  </button>
+  <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+    <a href="/zh/">關於</a>
+    <a href="/zh/blog/" aria-current="page">文章</a>
+    <div class="mobile-social">
+  <a href="https://x.com/xiaobocm" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a>
+  <a href="https://github.com/xiaobocm" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+  <a href="https://www.sinoflare.com" target="_blank" rel="noopener" aria-label="SinoFlare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3Z"/></svg></a>
+  <a href="/zh/feed.xml" aria-label="RSS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="5.5" cy="18.5" r="1.5" fill="currentColor" stroke="none"/><path d="M4 4a16 16 0 0 1 16 16M4 10a10 10 0 0 1 10 10"/></svg></a>
+</div>
+    <div class="mobile-lang" aria-label="語言">
+  <a href="/blog/why-ideas-win/" lang="en" hreflang="en">EN</a>
+  <span aria-hidden="true">/</span>
+  <a href="/zh/blog/why-ideas-win/" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁</a>
+</div>
+  </nav>
+  <div class="site-tools">
+    <div class="lang-switch" aria-label="語言">
+  <a href="/blog/why-ideas-win/" lang="en" hreflang="en">EN</a>
+  <span aria-hidden="true">/</span>
+  <a href="/zh/blog/why-ideas-win/" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁</a>
+</div>
+    <button class="theme-toggle" type="button" data-dark-label="切換至深色模式" data-light-label="切換至淺色模式" aria-label="切換至深色模式" title="切換至深色模式">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+    <div class="social-icons">
+  <a href="https://x.com/xiaobocm" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a>
+  <a href="https://github.com/xiaobocm" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+  <a href="https://www.sinoflare.com" target="_blank" rel="noopener" aria-label="SinoFlare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3Z"/></svg></a>
+  <a href="/zh/feed.xml" aria-label="RSS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="5.5" cy="18.5" r="1.5" fill="currentColor" stroke="none"/><path d="M4 4a16 16 0 0 1 16 16M4 10a10 10 0 0 1 10 10"/></svg></a>
+</div>
+  </div>
+</header>
+<main id="main" class="post-content">
+  <article>
+    <header class="post-header">
+      <p class="post-date">11-15-2026<span class="post-cat">模型</span></p>
+      <h1 class="post-heading">Token 的成本正在下降，壞點子的代價不會</h1>
+    </header>
+    <div class="post-body">
+      
+      <p class="lead">在商用語言模型這段不長的歷史裡，大部分時間真正有意思的限制條件是「能不能用到」。好模型很貴、有速率限制，或者得排隊候補。問題在於你有沒有辦法接近它。</p>
+<p>這個限制正在鬆動。開放權重的模型越做越好，推論越來越便宜。像 mixture-of-experts 這類稀疏架構，讓模型可以擁有遠多於單一 token 實際用到的參數。方向已經夠清楚了：更多的智慧，每次思考的價格更低。</p>
+<p>我認為這是好消息。我也認為，它正悄悄改變「難的部分」到底是什麼。</p>
+
+<h2>一次思考的價格</h2>
+<p>一個 token 是一小單位的工作。當 token 的價格下降，更多種類的工作在經濟上就變得合理：更長的上下文、更多次嘗試、更多工具呼叫、更多評估。如果第二次、第三次嘗試很便宜，模型就不必第一次就做到完美。</p>
+<p>但便宜的 token 不等於免費的智慧。一個把 token 只送進兩個 expert、而非全部 expert 的模型，仍然得把其餘的專家留在記憶體裡。一次漫長的 agent 執行，仍然需要被編排、被觀察，並在出錯時被停下來。帳單只是換了位置：從 GPU 小時換成工程師小時，從推論 API 換成評估迴圈。</p>
+<blockquote><p>當某種資源變便宜，瓶頸不會消失，只會移動。</p></blockquote>
+
+<h2>MoE 真正改變了什麼</h2>
+<p>mixture-of-experts 是一種分配技巧。它不讓每個 token 都穿過每一個參數，而是由 router 把每個 token 送給一小部分 expert。模型可以擁有很大的總容量，同時讓每個 token 的計算量接近一個更小的模型。</p>
+<p>聽起來像免費午餐，但並不是。路由是一個學出來的決策，而學出來的決策會出錯。專家可能變得不均衡。通訊與記憶體成本是真實存在的。有意思的研究不只是「我們能把模型做多大？」，還有「我們能把手上的算力花得多好？」</p>
+<pre data-lang="python"><code>def route(x, experts, k=2):
+    scores = [expert.score(x) for expert in experts]
+    top_k = sorted(range(len(scores)), key=scores.__getitem__, reverse=True)[:k]
+    weights = softmax([scores[i] for i in top_k])
+    return sum(w * experts[i](x) for w, i in zip(weights, top_k))</code></pre>
+<p>上面這段草稿漏掉了難的部分：批次處理、容量上限、負載平衡，以及 <code>softmax</code> 總得存在於某個地方這件事。真正的系統通常就住在這些地方。</p>
+
+<h2>Agent 花 token，就像團隊花會議</h2>
+<p>一個 agent 就是一個跑在迴圈裡的模型。它規劃、呼叫工具、讀取結果、修正，然後再試一次。這個迴圈讓 agent 有用，也讓 agent 昂貴。</p>
+<p>一個答案是一次推論。一個有用的 agent 可能是十次、五十次，或五百次。它可能帶著上一次嘗試的記憶，也可能同時維持好幾個候選計畫。成本不再是一個預算項目，而是一種行為。</p>
+<p>更便宜的 token 讓更有野心的迴圈成為可能，但不會把壞迴圈變成好迴圈。一個沒有停止條件、沒有評估的 agent，只是一種更昂貴的不確定。</p>
+
+<h2>稀缺的東西</h2>
+<p>如果智慧變便宜了，什麼會變貴？</p>
+<p>我認為答案是判斷力。選擇一個真正重要的問題。知道「更好」是什麼意思。設計一個會安全失敗的系統。察覺到 demo 很驚人，而產品毫無用處。這些不是模型的能力，而是人的能力。</p>
+<p>這就是我總會回到「想法」的原因。在 AI 時代，我們不缺技術，我們缺的是值得把技術指向的想法。一個 prompt 不是想法。一個功能不是產品。一個想法是一個主張：什麼東西應該存在、為什麼重要、什麼樣的取捨可以接受。</p>
+
+<h2>一份簡短的檢查清單</h2>
+<ol>
+<li><strong>不用 AI 描述這個問題。</strong>如果它在模型出現之前不是問題，之後也不會變成問題。</li>
+<li><strong>定義最小可用的 demo。</strong>一個使用者、一個任務、一個可衡量的改善。</li>
+<li><strong>寫下失敗模式。</strong>當模型出錯、變慢或不可用時，會發生什麼事？</li>
+<li><strong>衡量迴圈，而不是 demo。</strong>省下的時間、抓到的錯誤、改善的決策。</li>
+<li><strong>到那時候才擴大規模。</strong>更多 token、更多工具、更多 agent。</li>
+</ol>
+<p>便宜的 token 是思考得更大的絕佳藉口，也是思考得更少的糟糕藉口。</p>
+<p>token 的成本在下降，壞點子的代價沒有。真要說的話，它還在上漲，因為現在一個壞點子背後有更多算力。</p>
+      
+    
+    </div>
+  </article>
+  <p class="post-footer"><a href="/zh/">首頁</a></p>
+</main>
+</body>
+</html>
